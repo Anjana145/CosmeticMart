@@ -7,6 +7,11 @@ import Products from './pages/Products';
 import ProductDetail from './pages/ProductDetail';
 import AboutUs from './pages/About';
 import ContactUs from './pages/ContactUs';
+import FAQ from './pages/FAQ';
+import ShippingInfo from './pages/ShippingInfo';
+import Returns from './pages/Returns';
+import TrackOrder from './pages/TrackOrder';
+import PrivacyPolicy from './pages/PrivacyPolicy';
 
 function App() {
   return (
@@ -20,6 +25,11 @@ function App() {
             <Route path="/products/:id" element={<ProductDetail />} />
             <Route path="/about" element={<AboutUs/>} />
             <Route path="/contact" element={<ContactUs/>}/>
+            <Route path="/faq" element={<FAQ/>}/>
+            <Route path="/shipping" element={<ShippingInfo/>}/>
+            <Route path="/returns" element={<Returns/>}/>
+            <Route path="/track-order" element={<TrackOrder/>}/>
+            <Route path="/privacy-policy" element={<PrivacyPolicy/>}/>
           </Routes>
         </main>
         <Footer />
